@@ -5,7 +5,7 @@
   <head>
   </head>
   <body>
-      <div class="span12">
+<div class="span12">
   <div class="box">
     <div class="box-head">
       <h3>

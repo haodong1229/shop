@@ -205,12 +205,12 @@
 				</a>
 				<ul class='collapsed-nav closed'>
 					<li>
-						<a href="/lunbotu_index" class='set-liquid'>
+						<a href="/lunbotu_index">
 							查看轮播图
 						</a>
 					</li>
 					<li>
-						<a href="/lunbotu_index/create" class='set-fixed'>
+						<a href="/lunbotu_index/create">
 							添加轮播图
 						</a>
 					</li>
