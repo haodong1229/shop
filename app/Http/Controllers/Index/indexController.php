@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Index;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
+use DB;
 class indexController extends Controller
 {
     /**
@@ -14,7 +15,13 @@ class indexController extends Controller
      */
     public function index()
     {
-        //
+        // echo '前台首页';
+        //查询轮播图
+        $lun = DB::table('shop_lunbotu')->get();
+        //广告图片
+        $g = DB::table('shop_guanggao')->first();
+        
+        return view('home.index.index',['lun'=>$lun,'g'=>$g]);
     }
 
     /**

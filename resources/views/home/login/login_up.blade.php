@@ -13,7 +13,7 @@
   
   <body id="body" class="wrapper">
     <div id="top" style="margin:10px 0 0 0;padding:0 0 10px 0; border-bottom:solid 1px #919191;">
-      <img src="/login_in_static/picture/logo_new.jpg" alt="凡客诚品" title="凡客诚品" onclick="javascript:window.location.href=''" style="cursor:pointer" /></div>
+      <img src="/login_in_static/picture/logo_new.jpg" alt="凡客诚品" title="凡客诚品" onclick="javascript:window.location.href='/'" style="cursor:pointer" /></div>
     <!--logo-->
 <form action="/login_in" method="post" id="ss">
 

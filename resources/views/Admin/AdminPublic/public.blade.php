@@ -57,7 +57,7 @@
 </div>
 <div class="topbar clearfix">
 	<div class="container-fluid">
-		<a href="dashboard.html" class='company'>凡客后台</a>
+		<a href="/" class='company'>前往前台首页</a>
 		<ul class='mini'>
 			<li>
 				<a href="/logout">

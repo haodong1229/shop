@@ -7,7 +7,7 @@
     <link href="/login_in_static/css/login.css" rel="stylesheet" type="text/css" />
     <link href="/login_in_static/css/footer.css" rel="stylesheet" type="text/css" />
     <link href="/login_in_static/css/css.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="https://ssl.vanclimg.com/common/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <script type="text/javascript" language="javascript" src="/login_in_static/js/js.js"></script>
     <script type="text/javascript" language="javascript" src="/login_in_static/js/script.js"></script>
     <script type="text/javascript" language="javascript" src="/login_in_static/js/login.js"></script>
@@ -17,7 +17,7 @@
   <body>
     <center>
       <div id="Head" align="left">
-        <a class="logo" href=""></a>
+        <a class="logo" href="/"></a>
         <p>
           <a href="" target="_blank">帮助</a></p>
       </div>
@@ -76,12 +76,12 @@
             <h2 class="hezuo">使用合作网站账号登录凡客</h2>
             <span class="blank10"></span>
             <p class="qkimg">
-              <a href="/login/wxlogin.aspx?http%3A%2F%2Fwww.vancl.com%2F" id="a_wxlogin" class="weixin"></a>
-              <a class="xiaomi" onclick="openUrl('xiaomi')" href="javascript:void(0)"></a>
-              <a href="javascript:void(0)" onclick="openUrl('alipay')" class="zhifubao"></a>
-              <a class="qq" href="javascript:void(0)" onclick="openUrl('qq')"></a>
-              <a class="qihu360" href="javascript:void(0)" onclick="openUrl('qihoo360')"></a>
-              <a class="weibo" href="javascript:void(0)" onclick="openUrl('sinaweibo')"></a>
+              <a href="javascript:void(0)" id="a_wxlogin" class="weixin"></a>
+              <a class="xiaomi"  href="javascript:void(0)"></a>
+              <a href="javascript:void(0)"  class="zhifubao"></a>
+              <a class="qq" href="javascript:void(0)" ></a>
+              <a class="qihu360" href="javascript:void(0)" ></a>
+              <a class="weibo" href="javascript:void(0)" ></a>
               <div class="clear"></div>
               <div class="blank10"></div>
             </p>

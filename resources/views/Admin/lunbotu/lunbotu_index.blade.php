@@ -16,6 +16,7 @@
           <tr>
             <th>轮播图id</th>
             <th>轮播图图片</th>
+            <th>轮播图名字</th>
             
           </tr>
         </thead>
@@ -24,7 +25,8 @@
           @foreach($data as $row)
           <tr>
             <td>{{$row->id}}</td>
-            <td><img src="{{$row->img}}" style="width:500px;height:300px;"></td>
+            <td><img src="{{$row->img}}" style="width:400px;height:300px;"></td>
+            
           @endforeach
         </tbody>
       </table>

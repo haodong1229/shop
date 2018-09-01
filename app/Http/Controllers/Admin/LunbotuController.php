@@ -26,10 +26,7 @@ class LunbotuController extends Controller
         // die;
       //如果为空,赋空值给$data
         if (empty($newdata)) {
-            // $array[] = ['id'=>'暂无图片id','img'=>'暂无图片地址'];
-            // $data = $array;
-            // var_dump($data);
-            // die;
+            
             //跳转到新的轮播图页面
             return view('Admin.lunbotu.lunbotu_index2'); 
 
@@ -58,8 +55,14 @@ class LunbotuController extends Controller
      */
     public function store(Request $request)
     {
-
+        //获取文件的个数
         $i = count($request->file());
+        // $name['name'] = $request->except('_token','img1','img2','img3','img4','img5','img6');
+        
+        // $data = [];
+        // $data['name'] = $name['name'];
+        // // var_dump($data);
+        //循环保存文件到文件夹下
         for ($a=0;$a<=$i;$a++) {
 
             if ($request->hasFIle('img'.$a)) {
@@ -72,13 +75,21 @@ class LunbotuController extends Controller
             $pathname = "./admin/lunbotu/".$name.".".$ext;
             //装进数组里面
             $data['img'][$a] = $pathname;
+
+            // dd($data);
             }
         }
-        //循环输出
+        // var_dump($data);die;
+        
+
+        //循环输出图片和id
         foreach ($data['img'] as $k=>$v) {
             // 合并数据到数组
             $data['img'] = $v;
             $data['id'] = $k;
+
+            // var_dump($data);
+            // die;
             //先删除原有的1-6数据
             DB::table('shop_lunbotu')->where('id','=',$data['id'])->delete();
 
