@@ -38,9 +38,9 @@ class LoginMiddleware
 
             //关闭权限,可以浏览任意模块
             
-            // if (empty($nodelist[$controller]) || !in_array($actionName,$nodelist[$controller])) {
-            //     return redirect('/index')->with('error','抱歉,您没有权限访问该模块,请联系超级管理员');
-            // }
+            if (empty($nodelist[$controller]) || !in_array($actionName,$nodelist[$controller])) {
+                return redirect('/index')->with('error','抱歉,您没有权限访问该模块,请联系超级管理员');
+            }
 
             return $next($request);
         }else{

@@ -103,9 +103,13 @@ class GuanggaoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
-    {
+    {   
+        $img = DB::table('shop_guanggao')->where('id','=',$id)->first();
+        // var_dump($img);die;
+          unlink($img->img);
         $res = DB::table('shop_guanggao')->where('id','=',$id)->delete();
         if ($res) {
+            // unlink();
             return back()->with('success','广告删除成功');
         }else{
             return back()->with('error','广告删除失败');

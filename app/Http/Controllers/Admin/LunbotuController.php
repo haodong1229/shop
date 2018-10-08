@@ -148,8 +148,11 @@ class LunbotuController extends Controller
         // $id = '1-'.$id;
         // var_dump($id);
         // die;
-        for ($i=0;$i<=6;$i++) {
+        for ($i=1;$i<=6;$i++) {
             //循环删除
+            $img = DB::table('shop_lunbotu')->where('id','=',$i)->first();
+            // var_dump($img);die;
+            unlink($img->img);
             $res = DB::table('shop_lunbotu')->where('id','=',$i)->delete();
 
         }

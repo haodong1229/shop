@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Neat Admin Template</title>
+<title>后台登录</title>
 <meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">

@@ -43,13 +43,14 @@
                   zoom: 1;">
 
                     <!-- 验证码输入框 -->
+                      <span>{{session('error')}}ss</span>
                     <input id="_quickpiccode" name="code" type="text" placeholder="请输入图片验证码" value="" style="width: 260px;
                     border: solid 1px #cbcbcb; height: 43px; line-height: 43px;">
-
-                    <img id="_quickpiccodeimg" oldsrc="/login_in_static/picture/calculatevalidatecode_1.ashx" onclick="this.src='{{captcha_src()}}'+Math.random()" src="{{captcha_src()}}" style="cursor: pointer; vertical-align: middle;
+                    <img id="_quickpiccodeimg" onclick="this.src=this.src+'?a=1'" src="/code" style="cursor: pointer; vertical-align: middle;
                     width: 140px; height: 45px; position: absolute; top: 0; left: 272px;">
 
                   </div>
+                  <span style="color:red;">{{session('error')}}</span>
                 </li>
                 <li id='liemail' style="display: none;">
                   <div class="v2regListInfo_rtCont">
@@ -67,7 +68,6 @@
                     </div>
                     
                      <span class="v2reg_tips02"></span>
-
 
                     <span class="box5"></span>
                   </div>
@@ -273,7 +273,7 @@
 
     if(m.match(/\d{11,14}/)){
       
-      //Ajax检测邮箱是否已经注册
+      //Ajax检测手机是否已经注册
       $.get("/dologinup",{m:m},function(data){
 
       

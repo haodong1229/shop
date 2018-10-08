@@ -36,7 +36,7 @@
            <td style="text-align:center;"><input type="checkbox" name="{{$row->id}}" class="cid"></td> 
            <td>{{$row->id}}</td> 
            <td>{{$row->title}}</td> 
-           <td>{{$row->content}}</td> 
+           <td>{!!$row->content!!}</td> 
            <td> 
             <form action="/gao/{{$row->id}}/edit"> 
              <button>修改</button> 

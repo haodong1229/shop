@@ -117,9 +117,17 @@
 			</li>
 			<li>
 				<a href="#" class='light toggle-collapsed'>
-					<div class="ico"><i class="icon-th-large icon-white"></i></div>
+					<div class="ico"><i class="icon-tasks icon-white"></i></div>
 					前台会员管理
+					<img src="/admin/img/toggle-subnav-down.png" alt="">
 				</a>
+				<ul class='collapsed-nav closed'>
+					<li>
+						<a href="/index_vip">
+							查看会员
+						</a>
+					</li>
+				</ul>
 			</li>
 			<li>
 				<a href="#" class='light toggle-collapsed'>
@@ -219,27 +227,48 @@
 			<li>
 				<a href="#" class='light toggle-collapsed'>
 					<div class="ico"><i class="icon-resize-full icon-white"></i></div>
-					评价管理
-				</a>
-			</li>
-			<li>
-				<a href="#" class='light toggle-collapsed'>
-					<div class="ico"><i class="icon-resize-full icon-white"></i></div>
 					订单管理
+					<img src="/admin/img/toggle-subnav-down.png" alt="">
 				</a>
-			</li>		
+				<ul class='collapsed-nav closed'>
+					<li>
+						<a href="/detail">
+							查看订单
+						</a>
+					</li>
+				</ul>
+			</li>
 			<li>
 				<a href="#" class='light toggle-collapsed'>
 					<div class="ico"><i class="icon-resize-full icon-white"></i></div>
-					积分管理
+					评价管理
+					<img src="/admin/img/toggle-subnav-down.png" alt="">
 				</a>
+				<ul class='collapsed-nav closed'>
+					<li>
+						<a href="/ping">
+							查看评价
+						</a>
+					</li>
+				</ul>
 			</li>
+
 			<li>
 				<a href="#" class='light toggle-collapsed'>
 					<div class="ico"><i class="icon-resize-full icon-white"></i></div>
 					提问管理
+					<img src="/admin/img/toggle-subnav-down.png" alt="">
 				</a>
+				<ul class='collapsed-nav closed'>
+					<li>
+						<a href="/tiwen">
+							查看提问
+						</a>
+					</li>
+				</ul>
 			</li>
+
+			
 			
 		</ul>
 	</div>

@@ -395,6 +395,7 @@
   </style>
 
 <!-- 广告的div ------------------------------------------- -->
+
     <div id="overlay">
       <div style="background:#000;filter:alpha(opacity=40);opacity:0.4;-moz-opacity:0.4;width:100%;height:100%; position:fixed; _position:absolute;left:0px;top:0px; z-index:999998;"></div>
       <div class="screenAdPop">
@@ -410,4 +411,4 @@
         <span class="screenAdClose"></span>
       </div>
     </div>
-  @endsection
+@endsection

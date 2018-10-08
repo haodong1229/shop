@@ -38,7 +38,7 @@
                     <div class="control-group">
                       <label for="username" class="control-label">管理员密码</label>
                       <div class="controls">
-                        <input type="text" name="password" id="username" placeholder="输入8-16位管理员密码">
+                        <input type="password" name="password" id="username" placeholder="输入8-16位管理员密码">
                       </div>
                     </div>
         
